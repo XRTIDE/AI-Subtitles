@@ -1,0 +1,18 @@
+#输入的视频文件
+input: "./weishu.mp4"
+#中间过程会生成的音频文件
+output: ./weishu.mp3
+#生成的原始字幕文件
+srt_path: ./weishu.srt
+#生成的翻译后的字幕文件
+srt_translate_path: ./weishu.srt
+#翻译时开启多少线程
+translate_threads: 8
+#翻译源语言
+from: zh
+#翻译目标语言
+to: ja
+#可指定自定义whisper model, 默认为base model 
+hf_model_path: ""
+#devive: cuda, cpu
+device: cpu
